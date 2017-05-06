@@ -1,0 +1,10 @@
+com\dav\service\StorageException.class
+com\dav\service\UploadService.class
+com\dav\service\StorageProperties.class
+com\dav\HelloRestController.class
+com\dav\entity\Document.class
+com\dav\service\StorageFileNotFoundException.class
+com\dav\service\FileSystemStorageService.class
+com\dav\SpringBootWebApplication.class
+com\dav\service\StorageService.class
+com\dav\dao\DocumentDao.class
