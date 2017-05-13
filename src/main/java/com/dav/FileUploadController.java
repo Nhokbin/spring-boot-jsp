@@ -18,6 +18,7 @@ import com.dav.dao.DocumentDao;
 import com.dav.entity.Document;
 import com.dav.service.StorageFileNotFoundException;
 import com.dav.service.StorageService;
+import com.dav.service.UploadS3;
 import com.dav.service.UploadService;
 
 
@@ -100,8 +101,8 @@ public class FileUploadController {
 
 		File convFile = storageService.store(file);
 
-		UploadService service = new UploadService();
-		String url = service.Upload(convFile);
+		UploadS3 service = new UploadS3();
+		String url = service.upload(convFile);
 
 		redirectAttributes.addFlashAttribute("message",
 				"You successfully uploaded " + file.getOriginalFilename() + "! And Uploaded to Drive View: " + url);
